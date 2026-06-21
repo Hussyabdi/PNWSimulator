@@ -44,7 +44,7 @@ export default function HomePage() {
         <span className="hero__bg-word" aria-hidden="true">PNW</span>
 
         <div className="container hero__content">
-          <p className="hero__location">Seattle, WA · Est. 2026</p>
+          <p className="hero__location">Seattle, WA</p>
 
           <h1 className="hero__headline">
             <span className="hero__hl-small">Mobile Golf</span>

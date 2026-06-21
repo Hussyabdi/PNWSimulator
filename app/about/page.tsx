@@ -81,7 +81,7 @@ export default function AboutPage() {
                   "We believe the best events create memories. We're here to
                   help you build one."
                 </div>
-                <div className="about-callout__attr">— PNW Simulators Team</div>
+                <div className="about-callout__attr">PNW Simulators Team</div>
               </div>
 
               <div className="about-location">

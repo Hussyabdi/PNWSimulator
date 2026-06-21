@@ -395,7 +395,6 @@ export default function ContactPage() {
 
         .form-group textarea {
           resize: vertical;
-          min-height: 120px;
         }
 
         .form-group input[type="date"] {
@@ -404,7 +403,6 @@ export default function ContactPage() {
 
         .form-submit {
           align-self: flex-start;
-          min-width: 160px;
           justify-content: center;
         }
 
