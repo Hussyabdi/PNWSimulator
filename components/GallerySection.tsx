@@ -108,7 +108,7 @@ export default function GallerySection() {
           align-items: flex-start;
           justify-content: space-between;
           gap: 3rem;
-          margin-bottom: 3rem;
+          margin-bottom: 2rem;
           flex-wrap: wrap;
         }
 
@@ -134,7 +134,7 @@ export default function GallerySection() {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 4px;
-          margin-bottom: 2.5rem;
+          margin-bottom: 1.5rem;
         }
 
         .gallery-card {

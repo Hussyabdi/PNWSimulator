@@ -9,45 +9,6 @@ export const metadata: Metadata = {
   title: 'PNW Simulators — Mobile Golf Simulator Events in Seattle',
 }
 
-const eventTypes = [
-  {
-    number: '01',
-    title: 'Corporate Events',
-    description:
-      'Elevate team outings, client entertainment, and company celebrations with a premium golf experience your guests will talk about.',
-  },
-  {
-    number: '02',
-    title: 'Weddings',
-    description:
-      'Add a memorable touch to your reception or rehearsal dinner. A crowd-pleasing activity for guests of all skill levels.',
-  },
-  {
-    number: '03',
-    title: 'Birthday Parties',
-    description:
-      'Make their day unforgettable. Indoor or outdoor, we bring the full setup wherever the party is.',
-  },
-  {
-    number: '04',
-    title: 'Trade Shows',
-    description:
-      'Stand out on the expo floor. A live golf simulator draws crowds, creates conversations, and leaves your booth memorable.',
-  },
-  {
-    number: '05',
-    title: 'School & Community',
-    description:
-      'Fundraisers, school events, and community gatherings. We make golf accessible and exciting for everyone.',
-  },
-  {
-    number: '06',
-    title: 'Private Parties',
-    description:
-      "Backyard bashes, holiday parties, team nights. Wherever friends gather, we bring something they'll still be talking about next week.",
-  },
-]
-
 const steps = [
   {
     num: '1',
@@ -63,67 +24,6 @@ const steps = [
     num: '3',
     title: 'Guests Play & Compete',
     body: "Everyone swings, competes, and creates lasting memories. We pack everything up when you're done.",
-  },
-]
-
-const benefits = [
-  {
-    title: 'Professional Setup',
-    body: 'We handle every detail from delivery to installation. Your venue, our gear, zero stress for you.',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'Indoor & Outdoor',
-    body: 'Ballrooms, backyards, warehouses, or parks. Our portable setup adapts to any environment.',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <circle cx="12" cy="12" r="2.5" fill="currentColor" opacity="0.4"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'Friendly Staff',
-    body: 'Our on-site team keeps the experience running smoothly and ensures every guest feels welcome.',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="8" r="4" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'Memorable Experiences',
-    body: 'A golf simulator is the kind of activity guests talk about long after the event is over.',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2l2.9 5.9L21 9l-4.5 4.4 1.1 6.3L12 17l-5.6 2.7 1.1-6.3L3 9l6.1-.9L12 2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'Competitive Challenges',
-    body: 'Closest to the pin, longest drive, and full course play. Built-in games make every event lively.',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'No Experience Needed',
-    body: 'First-time swinger or seasoned golfer, everyone picks it up fast and has a great time.',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
-      </svg>
-    ),
   },
 ]
 
@@ -219,60 +119,171 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── What We Do ───────────────────────────────────────────── */}
-      <section className="section what-we-do">
+      {/* ── Simulator Specs ──────────────────────────────────────── */}
+      <section className="section specs-section">
         <div className="container">
-          <div className="what-we-do__inner">
-            <AnimatedSection className="what-we-do__text">
-              <span className="eyebrow">What We Do</span>
-              <span className="gold-rule" />
-              <h2>Bring the Course<br /><em>to Your Event</em></h2>
-              <p>
-                PNW Simulators delivers a professional-grade golf simulator
-                experience straight to your venue. No tee times. No dress codes.
-                Just an unforgettable activity your guests will love, whether
-                they've never held a club or shoot under par.
-              </p>
-              <p>
-                We handle everything: delivery, setup, operation, and teardown.
-                You get a turnkey experience that makes you look great as a host.
-              </p>
-              <Link href="/services" className="btn btn-outline" style={{ marginTop: '1.5rem' }}>
-                See All Services
-              </Link>
-            </AnimatedSection>
+          <AnimatedSection className="specs-header">
+            <span className="eyebrow">The Setup</span>
+            <span className="gold-rule" />
+            <h2>Everything Included,<br />Nothing to Worry About</h2>
+          </AnimatedSection>
 
-            <AnimatedSection className="what-we-do__panel-wrap" delay={150}>
-              <div className="feature-panel">
-                <h3 className="feature-panel__heading">Any Venue.<br />Any Event.</h3>
-                <p className="feature-panel__body">
-                  Backyards, ballrooms, warehouses, parks. If there's space,
-                  we'll make it work. Our portable setup is designed for
-                  flexibility without sacrificing quality.
-                </p>
-                <div className="feature-panel__list">
-                  {[
-                    'Indoor & outdoor ready',
-                    'Setup in under 2 hours',
-                    'Works on any surface',
-                    'Professional-grade simulator tech',
-                  ].map((item) => (
-                    <div key={item} className="feature-panel__item">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                        <path d="M2 6l3 3 5-5" stroke="#1E6B24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                      {item}
-                    </div>
-                  ))}
+          <div className="specs-grid">
+            {/* Main spec card */}
+            <AnimatedSection className="spec-card spec-card--main" delay={0}>
+              <div className="spec-card__tag">Mobile Simulator Bay</div>
+              <div className="spec-card__dims">
+                <div className="spec-dim">
+                  <span className="spec-dim__val">15<span className="spec-dim__u">ft</span></span>
+                  <span className="spec-dim__label">Min. Width</span>
+                </div>
+                <div className="spec-dim__sep" />
+                <div className="spec-dim">
+                  <span className="spec-dim__val">15<span className="spec-dim__u">ft</span></span>
+                  <span className="spec-dim__label">Min. Depth</span>
+                </div>
+                <div className="spec-dim__sep" />
+                <div className="spec-dim">
+                  <span className="spec-dim__val">10<span className="spec-dim__u">ft</span></span>
+                  <span className="spec-dim__label">Min. Ceiling</span>
                 </div>
               </div>
+              <ul className="spec-card__list">
+                {[
+                  'Professional-grade launch monitor',
+                  '40+ world-famous courses',
+                  'Closest to pin & longest drive games',
+                  'Works on any flat surface',
+                  'Setup in under 90 minutes',
+                ].map(item => (
+                  <li key={item}>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M2.5 7l3 3 6-6" stroke="#1E6B24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </AnimatedSection>
+
+            {/* What's included cards */}
+            <div className="spec-includes">
+              {[
+                {
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  ),
+                  title: 'Full Delivery & Setup',
+                  body: 'We drive to your venue, install everything, and test it before your first guest arrives.',
+                },
+                {
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="8" r="4" stroke="currentColor" strokeWidth="1.5"/>
+                      <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    </svg>
+                  ),
+                  title: 'On-Site Staff',
+                  body: 'A trained attendant runs the simulator all night — games, tech support, and guest coaching included.',
+                },
+                {
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="1.5"/>
+                      <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  ),
+                  title: 'All Equipment Provided',
+                  body: 'Clubs, balls, mat, screen, projector — we bring it all. You provide the space and the guests.',
+                },
+                {
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  ),
+                  title: 'Indoor & Outdoor Ready',
+                  body: 'Ballrooms, backyards, warehouses, hotel lobbies — if there\'s space, we can make it work.',
+                },
+                {
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    </svg>
+                  ),
+                  title: 'Full Teardown',
+                  body: 'When the event ends, we pack up everything. Your venue is back to normal within 60 minutes.',
+                },
+                {
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    </svg>
+                  ),
+                  title: 'Custom Game Modes',
+                  body: 'Closest to pin, longest drive, full course rounds — we set up whatever fits your crowd.',
+                },
+              ].map(({ icon, title, body }, i) => (
+                <AnimatedSection key={title} delay={i * 60}>
+                  <div className="spec-include-item">
+                    <div className="spec-include-item__icon">{icon}</div>
+                    <div>
+                      <h3 className="spec-include-item__title">{title}</h3>
+                      <p className="spec-include-item__body">{body}</p>
+                    </div>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
+      {/* ── Indoor / Outdoor Callout ──────────────────────────────── */}
+      <section className="venue-callout">
+        <div className="container">
+          <AnimatedSection>
+            <div className="venue-callout__inner">
+              <div className="venue-callout__left">
+                <span className="eyebrow venue-callout__eyebrow">Venue Flexibility</span>
+                <h2>We Go Where<br />Your Event Is</h2>
+                <p>
+                  Backyard in Bellevue. Ballroom in downtown Seattle. Hotel lobby
+                  in Tacoma. We've set up in all of them. If there's 15×15 ft of
+                  flat space and 10 ft of ceiling, we're in business.
+                </p>
+                <Link href="/contact" className="btn btn-primary" style={{ marginTop: '2rem' }}>
+                  Tell Us About Your Venue
+                </Link>
+              </div>
+              <div className="venue-callout__right">
+                <div className="venue-type-list">
+                  {[
+                    { label: 'Backyard & Patio', note: 'Most popular for private parties' },
+                    { label: 'Hotel & Event Venue', note: 'Ballrooms, lobbies, conference rooms' },
+                    { label: 'Office & Warehouse', note: 'Perfect for corporate events' },
+                    { label: 'Park & Outdoor Space', note: 'Covered areas work great' },
+                    { label: 'Wedding Venue', note: 'Ceremony halls & reception spaces' },
+                  ].map(({ label, note }, i) => (
+                    <div key={label} className="venue-type-item" style={{ animationDelay: `${i * 0.07}s` }}>
+                      <div className="venue-type-item__dot" />
+                      <div>
+                        <span className="venue-type-item__label">{label}</span>
+                        <span className="venue-type-item__note">{note}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ── How It Works ─────────────────────────────────────────── */}
-      <section className="section section--alt how-it-works">
+      <section className="section section--alt how-it-works" style={{ paddingTop: 0 }}>
         <div className="container">
           <AnimatedSection>
             <h2 className="steps-heading">How It Works</h2>
@@ -289,61 +300,6 @@ export default function HomePage() {
                 </div>
               </AnimatedSection>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Event Types ──────────────────────────────────────────── */}
-      <section className="section events-section">
-        <div className="container">
-          <AnimatedSection className="events-header">
-            <h2>Events We Love</h2>
-            <p className="events-header__sub">
-              From corporate retreats to wedding receptions, we bring
-              the right experience to any occasion.
-            </p>
-          </AnimatedSection>
-
-          <div className="events-list">
-            {eventTypes.map(({ number, title, description }, i) => (
-              <AnimatedSection key={number} delay={i * 55}>
-                <Link href="/contact" className="event-row">
-                  <span className="event-row__num">{number}</span>
-                  <h3 className="event-row__title">{title}</h3>
-                  <p className="event-row__desc">{description}</p>
-                  <span className="event-row__arrow" aria-hidden="true">→</span>
-                </Link>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Benefits ─────────────────────────────────────────────── */}
-      <section className="section section--alt benefits-section">
-        <div className="container">
-          <div className="benefits-inner">
-            <AnimatedSection className="benefits-left">
-              <h2>Everything<br />You Need</h2>
-              <p>Built for hosts who want a great event, not a logistics headache.</p>
-              <Link href="/contact" className="btn btn-outline" style={{ marginTop: '2rem' }}>
-                Book an Event
-              </Link>
-            </AnimatedSection>
-
-            <div className="benefits-right">
-              {benefits.map(({ title, body, icon }, i) => (
-                <AnimatedSection key={title} delay={i * 60}>
-                  <div className="benefit-item">
-                    <div className="benefit-item__icon" aria-hidden="true">{icon}</div>
-                    <div>
-                      <h3 className="benefit-item__title">{title}</h3>
-                      <p className="benefit-item__body">{body}</p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -444,8 +400,8 @@ export default function HomePage() {
           position: relative;
           display: flex;
           align-items: flex-start;
-          padding-top: calc(72px + 2.5rem);
-          padding-bottom: 4rem;
+          padding-top: calc(72px + 1.5rem);
+          padding-bottom: 2.5rem;
           overflow: hidden;
           background: #fff;
         }
@@ -470,7 +426,6 @@ export default function HomePage() {
         .hero__content {
           position: relative;
           z-index: 1;
-          padding-bottom: clamp(3rem, 6vw, 5rem);
         }
 
         .hero__location {
@@ -479,7 +434,7 @@ export default function HomePage() {
           letter-spacing: 0.22em;
           text-transform: uppercase;
           color: #6B7A69;
-          margin-bottom: 2.5rem;
+          margin-bottom: 1.5rem;
           animation: fadeInUp 0.8s var(--ease-out-expo) both;
         }
 
@@ -541,7 +496,7 @@ export default function HomePage() {
           display: flex;
           align-items: center;
           gap: 0.85rem;
-          margin-top: 3.5rem;
+          margin-top: 2rem;
           font-size: 0.68rem;
           font-weight: 500;
           letter-spacing: 0.14em;
@@ -623,60 +578,243 @@ export default function HomePage() {
           flex-shrink: 0;
         }
 
-        /* ── What We Do ──────────────────────────────────────────── */
-        .what-we-do__inner {
+        /* ── Simulator Specs ────────────────────────────────────────*/
+        .specs-section {
+          background: #fff;
+        }
+
+        .specs-header {
+          margin-bottom: 2.5rem;
+        }
+
+        .specs-header h2 {
+          margin-top: 0;
+        }
+
+        .specs-grid {
+          display: grid;
+          grid-template-columns: 1fr 1.6fr;
+          gap: clamp(2rem, 4vw, 4rem);
+          align-items: start;
+        }
+
+        .spec-card {
+          background: #14431A;
+          border-radius: 6px;
+          padding: 2.5rem;
+          position: sticky;
+          top: calc(72px + 2rem);
+        }
+
+        .spec-card__tag {
+          font-size: 0.65rem;
+          font-weight: 600;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: #7EC882;
+          margin-bottom: 2rem;
+        }
+
+        .spec-card__dims {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          margin-bottom: 2rem;
+        }
+
+        .spec-dim {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+          flex: 1;
+          text-align: center;
+        }
+
+        .spec-dim__val {
+          font-family: var(--font-display);
+          font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+          font-weight: 400;
+          color: #fff;
+          line-height: 1;
+          letter-spacing: 0.02em;
+        }
+
+        .spec-dim__u {
+          font-size: 0.45em;
+          color: #7EC882;
+          margin-left: 0.1em;
+          vertical-align: middle;
+        }
+
+        .spec-dim__label {
+          font-size: 0.6rem;
+          font-weight: 500;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: rgba(255,255,255,0.4);
+        }
+
+        .spec-dim__sep {
+          width: 1px;
+          height: 40px;
+          background: rgba(255,255,255,0.08);
+          flex-shrink: 0;
+        }
+
+        .spec-card__list {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 0.85rem;
+        }
+
+        .spec-card__list li {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          font-size: 0.85rem;
+          color: rgba(255,255,255,0.75);
+          line-height: 1.4;
+        }
+
+        .spec-card__list svg {
+          flex-shrink: 0;
+        }
+
+        .spec-card__list svg path {
+          stroke: #7EC882;
+        }
+
+        /* 2-column grid of include items */
+        .spec-includes {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          border-top: 1px solid rgba(20, 67, 26, 0.1);
+          border-left: 1px solid rgba(20, 67, 26, 0.1);
+        }
+
+        .spec-include-item {
+          display: flex;
+          gap: 1rem;
+          align-items: flex-start;
+          padding: 1.75rem;
+          border-bottom: 1px solid rgba(20, 67, 26, 0.1);
+          border-right: 1px solid rgba(20, 67, 26, 0.1);
+          transition: background 0.2s ease;
+        }
+
+        .spec-include-item:hover {
+          background: #F5F8F5;
+        }
+
+        .spec-include-item__icon {
+          color: #1E6B24;
+          flex-shrink: 0;
+          margin-top: 0.1rem;
+        }
+
+        .spec-include-item__title {
+          font-family: var(--font-body);
+          font-size: 0.88rem;
+          font-weight: 600;
+          color: #14431A;
+          margin-bottom: 0.35rem;
+          text-transform: none;
+          letter-spacing: 0;
+          line-height: 1.3;
+        }
+
+        .spec-include-item__body {
+          font-size: 0.8rem;
+          color: #78736A;
+          line-height: 1.65;
+          margin: 0;
+        }
+
+        /* ── Venue Callout ───────────────────────────────────────── */
+        .venue-callout {
+          background: #F6F3ED;
+          padding-block: clamp(3rem, 5vw, 5rem);
+        }
+
+        .venue-callout__inner {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: clamp(3rem, 6vw, 6rem);
           align-items: center;
         }
 
-        .what-we-do__text h2 em {
-          font-style: italic;
-          color: #1E6B24;
+        .venue-callout__eyebrow {
+          display: block;
+          margin-bottom: 1.5rem;
         }
 
-        .what-we-do__text p {
-          margin-top: 1.25rem;
-        }
-
-        /* Feature panel: left-border + editorial heading, no icon boxes */
-        .feature-panel {
-          border-left: 2px solid rgba(20, 67, 26, 0.14);
-          padding-left: 2.5rem;
-        }
-
-        .feature-panel__heading {
-          font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-          color: #14431A;
-          line-height: 1.1;
+        .venue-callout__left h2 {
           margin-bottom: 1.25rem;
         }
 
-        .feature-panel__body {
-          font-size: 0.88rem;
-          margin-bottom: 2rem;
-          color: #374535;
-          line-height: 1.75;
+        .venue-callout__left p {
+          font-size: 0.92rem;
+          color: #78736A;
+          line-height: 1.8;
         }
 
-        .feature-panel__list {
+        .venue-type-list {
           display: flex;
           flex-direction: column;
-          gap: 0.65rem;
+          gap: 0;
+          border: 1px solid rgba(20, 67, 26, 0.1);
+          border-radius: 6px;
+          overflow: hidden;
+          background: #fff;
         }
 
-        .feature-panel__item {
+        .venue-type-item {
           display: flex;
           align-items: center;
-          gap: 0.65rem;
-          font-size: 0.82rem;
-          color: #374535;
+          gap: 1.25rem;
+          padding: 1.25rem 1.5rem;
+          border-bottom: 1px solid rgba(20, 67, 26, 0.08);
+          transition: background 0.2s ease;
+        }
+
+        .venue-type-item:last-child {
+          border-bottom: none;
+        }
+
+        .venue-type-item:hover {
+          background: #F5F8F5;
+        }
+
+        .venue-type-item__dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #1E6B24;
+          opacity: 0.6;
+          flex-shrink: 0;
+        }
+
+        .venue-type-item__label {
+          display: block;
+          font-size: 0.88rem;
+          font-weight: 500;
+          color: #18201A;
+          line-height: 1.3;
+        }
+
+        .venue-type-item__note {
+          display: block;
+          font-size: 0.72rem;
+          color: #8C8375;
+          margin-top: 0.1rem;
         }
 
         /* ── How It Works ────────────────────────────────────────── */
         .steps-heading {
-          margin-bottom: 4rem;
+          margin-bottom: 2.5rem;
         }
 
         .steps-grid {
@@ -686,12 +824,12 @@ export default function HomePage() {
         }
 
         .step {
-          padding: 3rem 3rem 3rem 0;
+          padding: 2rem 2rem 2rem 0;
           border-right: 1px solid rgba(20, 67, 26, 0.08);
         }
 
         .step:not(:first-child) {
-          padding-left: 3rem;
+          padding-left: 2rem;
         }
 
         .step:last-child {
@@ -702,12 +840,12 @@ export default function HomePage() {
         /* Large italic numeral is the visual anchor, not a faint watermark */
         .step__num {
           font-family: var(--font-display);
-          font-size: clamp(4rem, 8vw, 6.5rem);
-          font-weight: 300;
+          font-size: clamp(2.5rem, 5vw, 4rem);
+          font-weight: 400;
           line-height: 1;
           color: #1E6B24;
           font-style: italic;
-          margin-bottom: 1.75rem;
+          margin-bottom: 1rem;
         }
 
         .step__rule {
@@ -729,161 +867,10 @@ export default function HomePage() {
           line-height: 1.7;
         }
 
-        /* ── Event Types ─────────────────────────────────────────── */
-        /* Editorial row list — not a card grid */
-        .events-header {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 3rem;
-          margin-bottom: 3rem;
-          flex-wrap: wrap;
-        }
-
-        .events-header h2 {
-          margin: 0;
-        }
-
-        .events-header__sub {
-          font-size: 0.88rem;
-          color: #6B7A69;
-          max-width: 280px;
-          text-align: right;
-          line-height: 1.65;
-          padding-top: 0.4rem;
-        }
-
-        .events-list {
-          border-top: 1px solid rgba(20, 67, 26, 0.12);
-        }
-
-        .event-row {
-          display: grid;
-          grid-template-columns: 3.5rem 1fr 2fr 1.5rem;
-          gap: 2.5rem;
-          align-items: center;
-          padding: 2.25rem 0;
-          border-bottom: 1px solid rgba(20, 67, 26, 0.08);
-          text-decoration: none;
-          transition: padding-left 0.32s var(--ease-out-expo);
-        }
-
-        .event-row:hover {
-          padding-left: 0.85rem;
-        }
-
-        .event-row__num {
-          font-family: var(--font-display);
-          font-size: 0.8rem;
-          font-weight: 500;
-          color: rgba(30, 107, 36, 0.45);
-          letter-spacing: 0.08em;
-          font-style: italic;
-        }
-
-        .event-row__title {
-          font-size: clamp(0.95rem, 1.8vw, 1.25rem);
-          font-weight: 500;
-          color: #14431A;
-          margin: 0;
-          transition: color 0.2s ease;
-        }
-
-        .event-row:hover .event-row__title {
-          color: #1E6B24;
-        }
-
-        .event-row__desc {
-          font-size: 0.85rem;
-          color: #6B7A69;
-          line-height: 1.65;
-          margin: 0;
-        }
-
-        .event-row__arrow {
-          font-size: 1rem;
-          color: #1E6B24;
-          opacity: 0;
-          transform: translateX(-8px);
-          transition: opacity 0.2s ease, transform 0.3s var(--ease-out-expo);
-          justify-self: end;
-        }
-
-        .event-row:hover .event-row__arrow {
-          opacity: 1;
-          transform: translateX(0);
-        }
-
-        /* ── Benefits ────────────────────────────────────────────── */
-        /* Sticky 2-col: pinned heading + right-side item grid */
-        .benefits-inner {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: clamp(4rem, 8vw, 8rem);
-          align-items: start;
-        }
-
-        .benefits-left {
-          position: sticky;
-          top: calc(72px + 3rem);
-        }
-
-        .benefits-left h2 {
-          margin-bottom: 1.25rem;
-          line-height: 1.05;
-        }
-
-        .benefits-left p {
-          font-size: 0.88rem;
-          color: #6B7A69;
-        }
-
-        .benefits-right {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .benefit-item {
-          display: flex;
-          gap: 1.1rem;
-          padding: 2rem;
-          border-bottom: 1px solid rgba(20, 67, 26, 0.08);
-          border-right: 1px solid rgba(20, 67, 26, 0.08);
-          align-items: flex-start;
-        }
-
-        .benefit-item:nth-child(even) {
-          border-right: none;
-        }
-
-        .benefit-item:nth-last-child(-n+2) {
-          border-bottom: none;
-        }
-
-        .benefit-item__icon {
-          color: #1E6B24;
-          flex-shrink: 0;
-          margin-top: 0.15rem;
-        }
-
-        .benefit-item__title {
-          font-size: 0.92rem;
-          font-weight: 500;
-          color: #14431A;
-          margin-bottom: 0.4rem;
-        }
-
-        .benefit-item__body {
-          font-size: 0.82rem;
-          color: #6B7A69;
-          line-height: 1.7;
-          margin: 0;
-        }
-
         /* ── Pricing CTA ─────────────────────────────────────────── */
         /* Split layout — heading left, body + CTAs right */
         .pricing-cta {
-          padding-block: clamp(5rem, 10vw, 8rem);
+          padding-block: clamp(3.5rem, 6vw, 5.5rem);
           background: #14431A;
         }
 
@@ -962,7 +949,7 @@ export default function HomePage() {
         /* ── Stats Bar ───────────────────────────────────────────── */
         .stats-bar {
           background: #14431A;
-          padding-block: 3rem;
+          padding-block: 1.75rem;
         }
 
         .stats-bar__grid {
@@ -1057,13 +1044,9 @@ export default function HomePage() {
 
         /* ── Responsive ──────────────────────────────────────────── */
         @media (max-width: 1024px) {
-          .benefits-inner { grid-template-columns: 1fr; }
-          .benefits-left { position: static; }
-          .event-row { grid-template-columns: 3rem 1fr 1.5rem; gap: 1.5rem; }
-          .event-row__desc { display: none; }
-        }
-
-        @media (max-width: 1024px) {
+          .specs-grid { grid-template-columns: 1fr; }
+          .spec-card { position: static; }
+          .venue-callout__inner { grid-template-columns: 1fr; }
           .stats-bar__grid { grid-template-columns: repeat(2, 1fr); }
           .stat-item:nth-child(2) { border-right: none; }
           .stat-item:nth-child(1),
@@ -1075,7 +1058,6 @@ export default function HomePage() {
         }
 
         @media (max-width: 900px) {
-          .what-we-do__inner { grid-template-columns: 1fr; }
           .steps-grid { grid-template-columns: 1fr; }
           .step {
             padding: 2.5rem 0;
@@ -1092,14 +1074,9 @@ export default function HomePage() {
         }
 
         @media (max-width: 640px) {
+          .spec-includes { grid-template-columns: 1fr; }
+          .spec-card__dims { gap: 0.75rem; }
           .hero__bg-word { font-size: 58vw; right: -8%; }
-          .event-row { grid-template-columns: 2.5rem 1fr 1.5rem; gap: 1rem; }
-          .benefits-right { grid-template-columns: 1fr; }
-          .benefit-item { border-right: none; }
-          .benefit-item:nth-last-child(-n+2) {
-            border-bottom: 1px solid rgba(20, 67, 26, 0.08);
-          }
-          .benefit-item:last-child { border-bottom: none; }
         }
       `}</style>
     </>
