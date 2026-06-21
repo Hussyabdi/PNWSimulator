@@ -233,25 +233,13 @@ export default function ContactPage() {
                   <div className="contact-info__item">
                     <div className="contact-info__icon" aria-hidden="true">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M14 10.67c-1.26 0-2.47-.2-3.6-.56a1 1 0 00-1.02.24l-1.6 1.6A10.89 10.89 0 014.04 7.2l1.6-1.6a1 1 0 00.25-1.01A10.39 10.39 0 015.33 2a1 1 0 00-1-.67H2A1 1 0 001 2.33C1 9.4 6.6 15 13.67 15A1 1 0 0014.67 14v-2.33a1 1 0 00-.67-1z" stroke="currentColor" strokeWidth="1.2"/>
-                      </svg>
-                    </div>
-                    <div>
-                      <span className="contact-info__label">Phone</span>
-                      <a href="tel:+12065550000" className="contact-info__value">(206) 555-0000</a>
-                    </div>
-                  </div>
-
-                  <div className="contact-info__item">
-                    <div className="contact-info__icon" aria-hidden="true">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <rect x="1" y="3" width="14" height="10" rx="1.5" stroke="currentColor" strokeWidth="1.2"/>
                         <path d="M1 4.5l7 5 7-5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
                       </svg>
                     </div>
                     <div>
                       <span className="contact-info__label">Email</span>
-                      <a href="mailto:hello@pnwsimulators.com" className="contact-info__value">hello@pnwsimulators.com</a>
+                      <a href="mailto:pnwsimulators@gmail.com" className="contact-info__value">pnwsimulators@gmail.com</a>
                     </div>
                   </div>
 
