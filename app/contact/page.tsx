@@ -40,6 +40,7 @@ export default function ContactPage() {
   const [errors, setErrors] = useState<Errors>({})
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     const { name, value } = e.target
@@ -49,7 +50,7 @@ export default function ContactPage() {
     }
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     const newErrors = validate(form)
     if (Object.keys(newErrors).length > 0) {
@@ -57,11 +58,23 @@ export default function ContactPage() {
       return
     }
     setLoading(true)
-    // Simulate submission — replace with actual API/Formspree endpoint
-    setTimeout(() => {
+    setSubmitError(false)
+    try {
+      const res = await fetch('https://formspree.io/f/maqgwzzo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        setSubmitError(true)
+      }
+    } catch {
+      setSubmitError(true)
+    } finally {
       setLoading(false)
-      setSubmitted(true)
-    }, 1200)
+    }
   }
 
   return (
@@ -213,6 +226,11 @@ export default function ContactPage() {
                     {errors.message && <span className="form-error" role="alert" id="message-error">{errors.message}</span>}
                   </div>
 
+                  {submitError && (
+                    <p className="form-submit-error" role="alert">
+                      Something went wrong. Please try again or email us directly at pnwsimulators@gmail.com.
+                    </p>
+                  )}
                   <button type="submit" className={`btn btn-primary form-submit${loading ? ' form-submit--loading' : ''}`} disabled={loading}>
                     {loading ? (
                       <>
@@ -418,6 +436,12 @@ export default function ContactPage() {
         .form-submit--loading {
           opacity: 0.8;
           cursor: not-allowed;
+        }
+
+        .form-submit-error {
+          font-size: 0.82rem;
+          color: #e07060;
+          line-height: 1.6;
         }
 
         .spinner {
