@@ -119,6 +119,8 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                  {/* Honeypot — hidden from real users, catches bots */}
+                  <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} aria-hidden="true" />
                   <div className="form-row">
                     <div className={`form-group${errors.name ? ' form-group--error' : ''}`}>
                       <label htmlFor="name">Your Name <span aria-hidden="true">*</span></label>
