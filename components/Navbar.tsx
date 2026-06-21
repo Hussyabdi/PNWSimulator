@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
@@ -36,9 +37,18 @@ export default function Navbar() {
       <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}${menuOpen ? ' navbar--open' : ''}`}>
         <div className="navbar__inner container">
           <Link href="/" className="navbar__logo">
-            <span className="navbar__logo-pnw">PNW</span>
-            <span className="navbar__logo-sep"> </span>
-            <span className="navbar__logo-sim">Simulators</span>
+            <Image
+              src="/logo.png"
+              alt="PNW Simulators"
+              width={52}
+              height={52}
+              className="navbar__logo-img"
+              priority
+            />
+            <span className="navbar__logo-text">
+              <span className="navbar__logo-pnw">PNW</span>
+              <span className="navbar__logo-sim"> Simulators</span>
+            </span>
           </Link>
 
           <ul className="navbar__links">
@@ -95,15 +105,15 @@ export default function Navbar() {
           left: 0;
           right: 0;
           z-index: 1000;
-          transition: background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease;
-          border-bottom: 1px solid transparent;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-bottom: 1px solid rgba(20, 67, 26, 0.08);
+          transition: box-shadow 0.3s ease;
         }
 
         .navbar--scrolled {
-          background: rgba(11, 26, 11, 0.92);
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
-          border-bottom-color: var(--border-sub);
+          box-shadow: 0 2px 20px rgba(20, 67, 26, 0.08);
         }
 
         .navbar__inner {
@@ -114,16 +124,34 @@ export default function Navbar() {
         }
 
         .navbar__logo {
-          font-family: var(--font-display);
-          font-size: 1.3rem;
-          font-weight: 600;
-          letter-spacing: 0.02em;
-          color: var(--cream);
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
           flex-shrink: 0;
+          text-decoration: none;
+        }
+
+        .navbar__logo-img {
+          width: 44px;
+          height: 44px;
+          object-fit: contain;
+        }
+
+        .navbar__logo-text {
+          font-family: var(--font-display);
+          font-size: 1.5rem;
+          font-weight: 400;
+          letter-spacing: 0.06em;
+          line-height: 1;
+          text-transform: uppercase;
         }
 
         .navbar__logo-pnw {
-          color: var(--gold);
+          color: #1E6B24;
+        }
+
+        .navbar__logo-sim {
+          color: #1C3461;
         }
 
         .navbar__links {
@@ -139,7 +167,7 @@ export default function Navbar() {
           font-weight: 500;
           letter-spacing: 0.1em;
           text-transform: uppercase;
-          color: var(--muted);
+          color: #374535;
           position: relative;
           padding-bottom: 2px;
           transition: color 0.2s ease;
@@ -151,14 +179,14 @@ export default function Navbar() {
           bottom: -2px;
           left: 0;
           width: 0;
-          height: 1px;
-          background: var(--gold);
+          height: 2px;
+          background: #1E6B24;
           transition: width 0.3s var(--ease-out-expo);
         }
 
         .navbar__link:hover,
         .navbar__link--active {
-          color: var(--cream);
+          color: #14431A;
         }
 
         .navbar__link:hover::after,
@@ -187,28 +215,28 @@ export default function Navbar() {
         .navbar__burger span {
           display: block;
           width: 22px;
-          height: 1px;
-          background: var(--cream);
+          height: 2px;
+          background: #14431A;
           transition: all 0.3s ease;
           transform-origin: center;
         }
 
         .navbar__burger--active span:nth-child(1) {
-          transform: translateY(6px) rotate(45deg);
+          transform: translateY(7px) rotate(45deg);
         }
         .navbar__burger--active span:nth-child(2) {
           opacity: 0;
           transform: scaleX(0);
         }
         .navbar__burger--active span:nth-child(3) {
-          transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
         }
 
         /* Mobile Menu */
         .mobile-menu {
           position: fixed;
           inset: 0;
-          background: var(--forest);
+          background: #fff;
           z-index: 999;
           display: flex;
           flex-direction: column;
@@ -249,13 +277,13 @@ export default function Navbar() {
           font-family: var(--font-display);
           font-size: clamp(2rem, 8vw, 3rem);
           font-weight: 400;
-          color: var(--parchment);
+          color: #14431A;
           transition: color 0.2s ease;
         }
 
         .mobile-menu__links a:hover,
         .mobile-menu__links a.active {
-          color: var(--gold);
+          color: #1E6B24;
         }
 
         .mobile-menu__cta {

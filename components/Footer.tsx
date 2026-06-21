@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="footer__nav-col">
               <h4>Get in Touch</h4>
               <ul>
-                <li><a href="mailto:hello@pnwsimulators.com">hello@pnwsimulators.com</a></li>
+                <li><a href="mailto:pnwsimulators@gmail.com">pnwsimulators@gmail.com</a></li>
                 <li><a href="tel:+12065550000">(206) 555-0000</a></li>
                 <li className="footer__location">Seattle, WA</li>
               </ul>
@@ -50,8 +50,12 @@ export default function Footer() {
       <style>{`
         .footer {
           background: #070F07;
-          border-top: 1px solid var(--border-sub);
+          border-top: 1px solid rgba(243, 237, 225, 0.08);
           padding-block: 4rem 2rem;
+        }
+
+        .footer .divider {
+          background: linear-gradient(90deg, transparent, rgba(243, 237, 225, 0.1), transparent);
         }
 
         .footer__top {
@@ -66,7 +70,7 @@ export default function Footer() {
           font-family: var(--font-display);
           font-size: 1.5rem;
           font-weight: 600;
-          color: var(--cream);
+          color: #F3EDE1;
           display: block;
           margin-bottom: 1rem;
         }
@@ -74,7 +78,7 @@ export default function Footer() {
         .footer__tagline {
           font-size: 0.8rem;
           line-height: 1.6;
-          color: var(--muted);
+          color: rgba(243, 237, 225, 0.5);
           max-width: 220px;
         }
 
@@ -90,7 +94,7 @@ export default function Footer() {
           font-weight: 600;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: var(--gold);
+          color: #7EC882;
           margin-bottom: 1.25rem;
         }
 
@@ -103,17 +107,17 @@ export default function Footer() {
 
         .footer__nav-col a {
           font-size: 0.85rem;
-          color: var(--muted);
+          color: rgba(243, 237, 225, 0.5);
           transition: color 0.2s ease;
         }
 
         .footer__nav-col a:hover {
-          color: var(--cream);
+          color: #F3EDE1;
         }
 
         .footer__location {
           font-size: 0.85rem;
-          color: var(--muted);
+          color: rgba(243, 237, 225, 0.5);
         }
 
         .footer__bottom {
@@ -127,7 +131,7 @@ export default function Footer() {
 
         .footer__bottom p {
           font-size: 0.75rem;
-          color: var(--muted);
+          color: rgba(243, 237, 225, 0.4);
           line-height: 1;
         }
 
@@ -135,7 +139,7 @@ export default function Footer() {
           letter-spacing: 0.06em;
         }
 
-        .gold { color: var(--gold); }
+        .gold { color: #7EC882; }
 
         @media (max-width: 600px) {
           .footer__top { flex-direction: column; gap: 2.5rem; }

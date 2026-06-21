@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const values = [
   {
     title: 'Guest-First Experience',
-    body: 'Every decision we make is about making your guests feel like they\'re at a premium venue — not a rental.',
+    body: 'Every decision we make is about making your guests feel like they\'re at a premium venue, not a rental.',
   },
   {
     title: 'Seamless Execution',
@@ -48,14 +48,14 @@ export default function AboutPage() {
             <AnimatedSection className="about-story__text">
               <p className="about-story__lead">
                 PNW Simulators started with a simple idea: great events deserve
-                great entertainment — and a golf simulator is something almost
+                great entertainment, and a golf simulator is something almost
                 anyone can enjoy.
               </p>
               <p>
                 We're a Seattle-based team with a passion for creating experiences
                 that bring people together. Whether it's a company team-building
                 day, a wedding reception that needs a little something extra, or
-                a birthday party the guest of honor will never forget — we bring
+                a birthday party the guest of honor will never forget. We bring
                 the full experience directly to your venue.
               </p>
               <p>

@@ -59,7 +59,7 @@ const services = [
     title: 'Indoor & Outdoor Events',
     tagline: 'The PNW in all conditions.',
     description:
-      'Whether you\'re in a ballroom, a backyard, a warehouse, or a park — we\'re built for it. Our equipment is designed for flexibility and looks great in any environment. We\'ll assess your space and make it work.',
+      'Whether you\'re in a ballroom, a backyard, a warehouse, or a park, we\'re built for it. Our equipment is designed for flexibility and looks great in any environment. We\'ll assess your space and make it work.',
     includes: [
       'Indoor ballrooms & venues',
       'Outdoor spaces & parks',
@@ -100,7 +100,7 @@ export default function ServicesPage() {
             <span className="gold-rule" />
             <h1 className="services-h1">Everything Included.<br /><em>Nothing Overlooked.</em></h1>
             <p className="services-hero-sub">
-              One rental covers the full experience — equipment, setup, operation, and teardown.
+              One rental covers the full experience: equipment, setup, operation, and teardown.
             </p>
           </AnimatedSection>
         </div>

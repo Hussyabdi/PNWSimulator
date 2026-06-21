@@ -168,8 +168,11 @@ export default function ContactPage() {
                       <select id="eventType" name="eventType" value={form.eventType} onChange={handleChange}>
                         <option value="">Select an event type…</option>
                         <option value="corporate">Corporate Event</option>
+                        <option value="team-building">Team Building</option>
                         <option value="wedding">Wedding / Reception</option>
                         <option value="birthday">Birthday Party</option>
+                        <option value="trade-show">Trade Show</option>
+                        <option value="private-party">Private Party</option>
                         <option value="school">School / Community</option>
                         <option value="other">Other</option>
                       </select>
@@ -277,7 +280,7 @@ export default function ContactPage() {
                 </div>
                 <p>
                   Give us as much detail as you can about your event and we'll
-                  come back with a custom quote — no commitment required.
+                  come back with a custom quote. No commitment required.
                 </p>
               </div>
 
@@ -285,7 +288,7 @@ export default function ContactPage() {
                 <span className="eyebrow" style={{ marginBottom: '0.75rem', display: 'block' }}>Service Area</span>
                 <p className="contact-service-area__text">
                   Greater Seattle, Eastside, South Sound, and surrounding Pacific
-                  Northwest. Have an event further out? Ask us — we may be able to help.
+                  Northwest. Have an event further out? Ask us and we may be able to help.
                 </p>
               </div>
             </AnimatedSection>
