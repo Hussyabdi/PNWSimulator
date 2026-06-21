@@ -40,8 +40,8 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="PNW Simulators"
-              width={52}
-              height={52}
+              width={64}
+              height={64}
               className="navbar__logo-img"
               priority
             />
@@ -132,8 +132,8 @@ export default function Navbar() {
         }
 
         .navbar__logo-img {
-          width: 44px;
-          height: 44px;
+          width: 56px;
+          height: 56px;
           object-fit: contain;
         }
 

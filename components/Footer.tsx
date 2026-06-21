@@ -32,7 +32,6 @@ export default function Footer() {
               <h4>Get in Touch</h4>
               <ul>
                 <li><a href="mailto:pnwsimulators@gmail.com">pnwsimulators@gmail.com</a></li>
-                <li><a href="tel:+12065550000">(206) 555-0000</a></li>
                 <li className="footer__location">Seattle, WA</li>
               </ul>
             </div>
