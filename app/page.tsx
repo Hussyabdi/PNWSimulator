@@ -653,7 +653,7 @@ export default function HomePage() {
           font-weight: 500;
           letter-spacing: 0.14em;
           text-transform: uppercase;
-          color: rgba(255,255,255,0.4);
+          color: rgba(255,255,255,0.72);
         }
 
         .spec-dim__sep {
@@ -882,7 +882,7 @@ export default function HomePage() {
         }
 
         .pricing-cta__eyebrow {
-          color: rgba(126, 200, 130, 0.7);
+          color: #7EC882;
           display: block;
           margin-bottom: 1.25rem;
         }
@@ -899,7 +899,7 @@ export default function HomePage() {
 
         .pricing-cta__right p {
           font-size: 0.92rem;
-          color: rgba(255, 255, 255, 0.58);
+          color: rgba(255, 255, 255, 0.84);
           margin-bottom: 2rem;
           line-height: 1.8;
         }
@@ -921,8 +921,8 @@ export default function HomePage() {
         }
 
         .pricing-cta .btn-outline {
-          color: rgba(255, 255, 255, 0.72);
-          border-color: rgba(255, 255, 255, 0.22);
+          color: rgba(255, 255, 255, 0.9);
+          border-color: rgba(255, 255, 255, 0.38);
         }
 
         .pricing-cta .btn-outline:hover {
@@ -991,7 +991,7 @@ export default function HomePage() {
           font-weight: 500;
           letter-spacing: 0.14em;
           text-transform: uppercase;
-          color: rgba(255, 255, 255, 0.45);
+          color: rgba(255, 255, 255, 0.75);
         }
 
         /* ── Service Area ────────────────────────────────────────── */

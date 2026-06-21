@@ -106,7 +106,7 @@ export default function Footer() {
 
         .footer__nav-col a {
           font-size: 0.85rem;
-          color: rgba(243, 237, 225, 0.5);
+          color: rgba(243, 237, 225, 0.78);
           transition: color 0.2s ease;
         }
 
@@ -116,7 +116,7 @@ export default function Footer() {
 
         .footer__location {
           font-size: 0.85rem;
-          color: rgba(243, 237, 225, 0.5);
+          color: rgba(243, 237, 225, 0.78);
         }
 
         .footer__bottom {
@@ -130,7 +130,7 @@ export default function Footer() {
 
         .footer__bottom p {
           font-size: 0.75rem;
-          color: rgba(243, 237, 225, 0.4);
+          color: rgba(243, 237, 225, 0.65);
           line-height: 1;
         }
 

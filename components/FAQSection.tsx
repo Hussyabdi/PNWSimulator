@@ -61,6 +61,7 @@ export default function FAQSection() {
                       className="faq-item__btn"
                       onClick={() => toggle(i)}
                       aria-expanded={isOpen}
+                      aria-controls={`faq-panel-${i}`}
                     >
                       <span className="faq-item__question">{q}</span>
                       <span className="faq-item__icon" aria-hidden="true">
@@ -75,7 +76,7 @@ export default function FAQSection() {
                         </svg>
                       </span>
                     </button>
-                    <div className="faq-item__body">
+                    <div id={`faq-panel-${i}`} className="faq-item__body" role="region" aria-label={q}>
                       <p className="faq-item__answer">{a}</p>
                     </div>
                   </div>

@@ -114,7 +114,7 @@ export default function ServicesPage() {
               <AnimatedSection key={title} delay={i * 100}>
                 <div className="service-card">
                   <div className="service-card__header">
-                    <div className="service-card__icon">{icon}</div>
+                    <div className="service-card__icon" aria-hidden="true">{icon}</div>
                     <div>
                       <span className="service-card__tagline">{tagline}</span>
                       <h3 className="service-card__title">{title}</h3>

@@ -117,8 +117,11 @@ export default function ContactPage() {
                         onChange={handleChange}
                         placeholder="Jane Smith"
                         autoComplete="name"
+                        required
+                        aria-required="true"
+                        aria-describedby={errors.name ? 'name-error' : undefined}
                       />
-                      {errors.name && <span className="form-error" role="alert">{errors.name}</span>}
+                      {errors.name && <span className="form-error" role="alert" id="name-error">{errors.name}</span>}
                     </div>
 
                     <div className={`form-group${errors.email ? ' form-group--error' : ''}`}>
@@ -131,8 +134,11 @@ export default function ContactPage() {
                         onChange={handleChange}
                         placeholder="jane@example.com"
                         autoComplete="email"
+                        required
+                        aria-required="true"
+                        aria-describedby={errors.email ? 'email-error' : undefined}
                       />
-                      {errors.email && <span className="form-error" role="alert">{errors.email}</span>}
+                      {errors.email && <span className="form-error" role="alert" id="email-error">{errors.email}</span>}
                     </div>
                   </div>
 
@@ -200,8 +206,11 @@ export default function ContactPage() {
                       value={form.message}
                       onChange={handleChange}
                       placeholder="Where is the event? What's the occasion? Any specific questions or requests?"
+                      required
+                      aria-required="true"
+                      aria-describedby={errors.message ? 'message-error' : undefined}
                     />
-                    {errors.message && <span className="form-error" role="alert">{errors.message}</span>}
+                    {errors.message && <span className="form-error" role="alert" id="message-error">{errors.message}</span>}
                   </div>
 
                   <button type="submit" className={`btn btn-primary form-submit${loading ? ' form-submit--loading' : ''}`} disabled={loading}>
